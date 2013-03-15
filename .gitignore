@@ -1,4 +1,4 @@
 *.sw?
 *.txt
 src/*
-_site/*
+*/_site/*
