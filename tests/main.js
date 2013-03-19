@@ -1,9 +1,16 @@
-require([
-  'uml',
-], function(uml){
-  console.log("Main");
-  console.log(uml.property);
-  console.log(uml.method());
+(function(){
+  "use strict";
+  require([
+    'uml'
+  ], function(uml){
 
-});
+    console.log("Main");
+    var model = new uml.Class({
+      vis : "private",
+      comments : "here are my comments"
+    });
 
+    console.log("New class:",model);
+
+  });
+}());
